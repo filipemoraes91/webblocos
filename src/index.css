@@ -1,0 +1,138 @@
+/* reset.css */
+/* Baseado no Meyer Reset + ajustes modernos */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #fff;
+  color: #000;
+  font-family: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ed3237;
+}
+
+a.link-accent {
+  color: #ed3237;
+}
+
+a.link-accent:hover {
+  color: #d92b30;
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer;
+  height: 8px;
+  border-radius: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(48, 48, 48);
+  border-radius: 8px;
+}
+
+.scale-in-top {
+  -webkit-animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Cores de destaque (vermelho da logo) */
+.text-accent {
+  color: #ed3237 !important;
+}
+
+.bg-accent {
+  background-color: #ed3237 !important;
+}
+
+.border-accent {
+  border-color: #ed3237 !important;
+}
+
+.hover-accent:hover {
+  color: #ed3237 !important;
+}
+
+/* Destaques para elementos importantes */
+.highlight-text {
+  color: #ed3237;
+  font-weight: 600;
+}
+
+.detail-label {
+  color: #ed3237;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.detail-value {
+  color: inherit;
+  font-weight: 400;
+}

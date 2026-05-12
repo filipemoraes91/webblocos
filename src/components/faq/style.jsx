@@ -1,0 +1,23 @@
+export const getStyles = (theme) => ({
+  faqQill: {
+    ".ql-toolbar": {
+      background: "#f7f7f7 !important",
+    },
+    ".ql-toolbar button": {
+      background: "#f7f7f7 !important",
+      color: "#222 !important",
+      border: "none !important",
+    },
+    ".ql-toolbar button:hover .ql-toolbar button:focus": {
+      background: "#e0e0e0 !important",
+    },
+    ".ql-toolbar .ql-picker": {
+      background: "#f7f7f7 !important",
+      color: "#222 !important",
+    },
+    ".ql-toolbar .ql-picker-options": {
+      background: "#fff !important",
+      color: "#222 !important",
+    },
+  },
+});

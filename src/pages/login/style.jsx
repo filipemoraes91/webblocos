@@ -1,0 +1,32 @@
+export const getStyles = (theme, isMobile, visible, isHovered) => ({
+  logo: {
+    width: isMobile ? "0%" : "65%",
+    height: isMobile ? "0" : "100vh",
+    display: isMobile ? "none" : "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: `${theme.backgroundL}`,
+  },
+  login: {
+    width: isMobile ? "100vw" : "20%",
+    height: isMobile ? "100%" : "75%",
+    position: "absolute",
+    top: isMobile ? "0" : "10%",
+    left: isMobile ? "0" : "40%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: `${theme.backgroundD}`,
+    padding: isMobile ? "10px" : "20px",
+    boxShadow: isMobile ? "0" : "10px 10px 20px rgba(0, 0, 0, 0.2)",
+    zIndex: 10,
+    borderRadius: "7px",
+  },
+  title: {
+    fontSize: "1rem",
+    color: `${theme.color}`,
+    marginBottom: isMobile ? "10px" : "20px",
+    textAlign: "center",
+  },
+});
